@@ -359,6 +359,12 @@ const createTracePayload = (groupedByRequestId, sentRequests) =>
                             },
                           };
                         }),
+                        {
+                          key: 'sls.original_properties',
+                          value: {
+                            stringValue: Object.keys(span.attributes).join(','),
+                          },
+                        },
                         ...metricAttributes.filter(({ key }) => !existingKeys.includes(key)),
                       ],
                     };

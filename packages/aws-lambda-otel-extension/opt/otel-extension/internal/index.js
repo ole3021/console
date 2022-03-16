@@ -171,16 +171,12 @@ const responseHandler = async (span, { res, err }, isTimeout) => {
         const startTime = val.startTime || [0, 0];
         const endTime = val.endTime || [0, 0];
 
-        let attributes = {
-          ...val.attributes,
-          'sls.original_properties': Object.keys(val.attributes).join(','),
-        };
+        let attributes = val.attributes;
         if (
           firstThing.instrumentationLibrary.name === '@opentelemetry/instrumentation-aws-lambda'
         ) {
           attributes = {
             ...val.attributes,
-            'sls.original_properties': Object.keys(val.attributes).join(','),
             // Only add path data if we have an http.path
             ...(!pathData['http.path'] ? {} : pathData),
           };
