@@ -11,6 +11,8 @@
     "fs2": "^0.3.9"
   },
   "scripts": {
+    "prebuild:prod": "esbuild opt/otel-extension/external/index.js --bundle --platform=node --target=node12 --minify --outfile=opt/build/external/index.js && esbuild opt/otel-extension/internal/index.js --bundle --minify --platform=node --target=node12 --outfile=opt/build/internal/index.js",
+    "build:prod": "./scripts/build.prod.js",
     "build": "./scripts/build.js",
     "test": "mocha \"test/unit/**/*.test.js\"",
     "test:isolated": "mocha-isolated \"test/unit/**/*.test.js\"",
