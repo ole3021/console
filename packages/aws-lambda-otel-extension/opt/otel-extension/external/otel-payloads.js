@@ -168,8 +168,9 @@ const createLogPayload = (fun, logs) => {
 
   return logs.map((log) => {
     const split = (log.record || '').split('\t');
+    const Timestamp = process.hrtime.bigint().toString();
     return {
-      Timestamp: split[0] ? new Date(split[0]).getTime() : new Date().getTime(),
+      Timestamp,
       Attributes: resourceAtt,
       Resource: metricsAtt,
       TraceId: spanData.traceId,
