@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "../dev",
+      "name": "Development"
+    },
+    {
+      "path": "../node/packages/aws-lambda-otel-extension/external",
+      "name": "Node: Packages: External"
+    },
+    {
+      "path": "../node/packages/aws-lambda-otel-extension/internal",
+      "name": "Node: Packages: Internal Extension"
+    },
+    {
+      "path": "../python/packages/aws-lambda-otel-extension/internal",
+      "name": "Python: Packages: Internal Extension"
+    },
+    {
+      "path": "../python/packages/aws-lambda-otel-extension/scripts",
+      "name": "Python: Packages: Extension Scripts",
+    }
+  ],
+  "settings": {}
+}

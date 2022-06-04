@@ -1,0 +1,16 @@
+opentelemetry-distro==0.31b0
+opentelemetry-instrumentation==0.31b0
+opentelemetry-instrumentation-aws-lambda==0.31b0
+opentelemetry-instrumentation-botocore==0.31b0
+opentelemetry-instrumentation-logging==0.31b0
+opentelemetry-instrumentation-requests==0.31b0
+opentelemetry-instrumentation-urllib==0.31b0
+opentelemetry-instrumentation-psycopg2==0.31b0
+opentelemetry-instrumentation-wsgi==0.31b0
+opentelemetry-instrumentation-flask==0.31b0
+opentelemetry-instrumentation-django==0.31b0
+opentelemetry-instrumentation-mysql==0.31b0
+opentelemetry-instrumentation-redis==0.31b0
+opentelemetry-instrumentation-sqlalchemy==0.31b0
+opentelemetry-instrumentation-system-metrics==0.31b0
+opentelemetry-instrumentation-urllib3==0.31b0
